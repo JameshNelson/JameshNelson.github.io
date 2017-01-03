@@ -1,0 +1,42 @@
+/* For the Nav Bar */
+.navBody{
+  border-style: double;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+
+}
+
+.navButtons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav{
+  display:flex;
+  justify-content: center;
+  background-color: white; 
+}
+
+.button1{
+
+}
+
+.button2{
+
+}
+
+.button3{
+
+}
+
+/* The home page */
+
+.homeBackground{
+  width: auto;
+  background-image: url(http://hdwpro.com/wp-content/uploads/2016/07/Top-Gray-Wallpaper.jpg);
+  background-size: cover;
+  height: 100vh;
+}
