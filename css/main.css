@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 20%;
-
+  position: fixed;
 }
 
 .navButtons{
@@ -17,7 +17,7 @@
 .nav{
   display:flex;
   justify-content: center;
-  background-color: white; 
+  background-color: white;
 }
 
 .button1{
@@ -36,7 +36,107 @@
 
 .homeBackground{
   width: auto;
-  background-image: url(http://hdwpro.com/wp-content/uploads/2016/07/Top-Gray-Wallpaper.jpg);
+  background-image: url(http://www.centralevangelicalchurch.co.uk/wp-content/uploads/2013/01/background-grey-1080.jpg);
   background-size: cover;
   height: 100vh;
+
+}
+
+.homeTitle{
+  display: flex;
+  justify-content: center;
+}
+
+.homeSpace{
+  height: 20%;
+}
+
+
+/* The Css animations page */
+
+.cssPage{
+  width: auto;
+  height: 100vh;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes example{
+  0%   {background-color:blue;}
+  25%  {background-color:yellow;}
+  50%  {background-color:red;}
+  75%  {background-color:green;}
+  100% {background-color:blue; }
+}
+
+.cssBox{
+  width: 55%;
+  height: 75%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.animation1{
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animation2{
+  height: 50%;
+  width: 50%;
+
+}
+.animation3{
+  height: 50%;
+  width: 50%;
+  background-color: green;
+}
+.animation4{
+  height: 50%;
+  width: 50%;
+  background-color: pink;
+}
+.movingBox{
+  width: 20%;
+  height: 20%;
+  position: relative;
+  background-color: gold;
+   animation-name: boxMove;
+   animation-duration: 4s;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+
+
+
+/* Standard syntax */
+@keyframes boxMove {
+    0%   { left: 0px; top:0px;}
+    25%  { left: 0px; top:0px;}
+    50%  { left: 293px; top:293px;}
+    75%  { left: 293px; top:293px;}
+    100% { top:0px; left: 0px; }
+}
+h3{
+  cfont: bold 2em monospace;
+  color: black;
+	border-right: .1em solid black;
+	width: calc(0.55em * 14);
+	width: 27ch;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 8s steps(26, end),
+	           blink-caret .5s step-end infinite alternate;
 }
